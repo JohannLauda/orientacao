@@ -1,0 +1,20 @@
+from funcionario import Funcionario
+nome = input()
+email = input("Email: ")
+
+#funcionario = Funcionario('antonio', 'tonhao@ymail.com')
+funcionario = Funcionario(nome, email)
+
+print(funcionario)
+funcionario.cadastro_hora('jan', 280)
+funcionario.cadastro_hora('fev', 250)
+funcionario.cadastro_salario_hora('jan', 160)
+funcionario.cadastro_salario_hora('fev', 180)
+print(funcionario.calcula_salario('jan'))
+print(funcionario.calcula_salario('fev'))
+
+
+print(funcionario)
+print(repr(funcionario))
+
+
